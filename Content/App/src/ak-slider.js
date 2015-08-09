@@ -7,9 +7,11 @@
                 restrict: "A",
                 scope: {
                     onSubmit: "&",
-                    slide: "="
+                    slide: "=akSliderSlide"
                 },
-                link: function(scope, element, attrs) {
+                link: function (scope, element, attrs) {
+
+                    element.addClass("akSlider");
 
                     function getSlidesDom() {
                         return element[0].querySelectorAll('ul[ak-slider] > li');

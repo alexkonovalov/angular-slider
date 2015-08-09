@@ -1,14 +1,13 @@
 ﻿body {
 }
 
-ul.carou{
-    width:300px; 
+ul.akSlider{
     height:300px;
-  overflow:hidden;/**/
+  overflow:hidden;
     position:relative;  
 }
 
-.carou li{
+.akSlider li{
     display:inline-block;
     left:0;
     height:300px; 

@@ -13,7 +13,7 @@
     <div>
         <div ng-app="sildeDemoApp">
             <div ng-controller="demoController">
-                <ul class="carou" ak-slider slide="slide">
+                <ul ak-slider ak-slider-slide="slide">
                     <li ng-repeat="item in items">
                         <div ng-style="{'background-color': item.color, 'height':'300px'}"> {{item.text}}</div>
                     </li>
