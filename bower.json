@@ -1,0 +1,9 @@
+{
+  "name": "angular-slider",
+  "description": "Angular Slideshow Directive",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x"
+  }
+}
