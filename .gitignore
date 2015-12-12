@@ -92,4 +92,6 @@ bower_components
 ### Covers Dist Folder Contents
 dist
 
+### Covers Demo Loaded Folders Contents
+demo/lib
 
