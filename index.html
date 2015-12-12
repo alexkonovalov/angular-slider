@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="../dist/ak-slider.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="../bower_components/angular/angular.min.js"></script>
+
+    <script src="../dist/ak-slider.min.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/demoController.js"></script>
+
+    <title></title>
+</head>
+<body>
+    <div>
+        <div ng-app="sildeDemoApp">
+            <div ng-controller="demoController">
+                <ul ak-slider ak-slider-slide="slide">
+                    <li ng-repeat="item in items">
+                        <div ng-style="{'background-color': item.color, 'height':'300px'}"> {{item.text}}</div>
+                    </li>
+                </ul>
+                <br />
+
+
+                slide: {{slide}}
+                <br />
+                <button ng-click="next()">next </button>
+                <button ng-click="prev()">previous </button>
+                <button ng-click="updateArr()">update arr and stay on this slide </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
