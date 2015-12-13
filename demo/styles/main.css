@@ -13,6 +13,7 @@ a.button {
     cursor: pointer;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
+    border-radius: 4px;
     color: #3a4a5a;
     background-color: #a8dff4;
     border: 0;
