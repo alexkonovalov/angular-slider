@@ -20,7 +20,7 @@ module.exports = function(grunt) {
             demo_lib : {
                 expand : true,
                 cwd : 'dist',
-                src: ['ak-slider.min.js', 'ak-slider.min.css'],
+                src: ['ak-slider.js', 'ak-slider.css'],
                 dest : '<%= globalConfig.demo %>/lib/slider'
             },
             demo_bower: {
@@ -72,6 +72,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask("default", [ "clean:build", "copy:dist_files", "uglify", "cssmin"]);
-    grunt.registerTask("publish", ["default", "clean:demo", "copy:demo_lib", "copy:demo_bower", "gh-pages"])
+    grunt.registerTask("demoprepare", ["default", "clean:demo", "copy:demo_lib", "copy:demo_bower"]);
+    grunt.registerTask("publish", ["demoprepare", "gh-pages"])
 
 };

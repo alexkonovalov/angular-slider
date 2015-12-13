@@ -37,8 +37,8 @@
         };
 
         $scope.unshiftItemsAndStay = function () {
-            $scope.items.unshift({ color: "#B0BB6B", text: "extra slide 1" });
-            $scope.items.unshift({ color: "#BB00BB", text: "extra slide 2" });
+            $scope.items.unshift({ color: "#B0BB6B"});
+            $scope.items.unshift({ color: "#BB00BB" });
             $scope.slide = $scope.slide + 2;
 
         }
