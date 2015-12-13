@@ -2,10 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link href="lib/slider/ak-slider.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+
     <script src="lib/bower_components/angular/angular.min.js"></script>
 
     <script src="lib/slider/ak-slider.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/randomDataService.js"></script>
     <script src="scripts/demoController.js"></script>
 
     <title></title>
@@ -14,20 +17,14 @@
     <div>
         <div ng-app="sildeDemoApp">
             <div ng-controller="demoController">
-                <ul ak-slider ak-slider-slide="slide" ak-slider-width="'500px'" style="display:block;" ak-slider-height="'300px'">
-                    <li ng-repeat="item in items">
-                        <div ng-style="{'background-color': item.color, 'height':'300px'}"></div>
-                    </li>
-                </ul>
-                <br />
-
-                slide: {{slide}}
-                <br />
-                <button ng-click="next()">next </button>
-                <button ng-click="prev()">previous </button>
-                <button ng-click="unshiftItemsAndStay()">unshift itmes and stay on this slide </button>
-                <button ng-click="pushItemsAndStay()">push itmes and stay on this slide </button>
-
+                <div>
+                     Slide {{imgSlide + 1}} out of {{imgItems.length}}
+                </div>
+                <br/>
+                <a class="button" ng-click="imgPrev()"> < </a>
+                <a class="button" ng-click="imgNext()"> > </a>
+                <a class="button" ng-click="unshiftItemsAndStay()">Unshift </a>
+                <a class="button" ng-click="pushItemsAndStay()">Push</a>
                 <div>
                     <ul ak-slider ak-slider-slide="imgSlide" ak-slider-width="'500px'" ak-slider-height="'500px'" >
                         <li ng-repeat="item in imgItems">
@@ -38,9 +35,6 @@
                     </ul>
                 </div>
                 <br />
-                <button ng-click="imgNext()">next </button>
-                <button ng-click="imgPrev()">previous </button>
-
 
 
             </div>

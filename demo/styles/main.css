@@ -1,0 +1,27 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(211, 225, 244, 0.49);
+    background-color: rgba(48, 50, 54, 0.83);
+}
+
+a.button {
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    color: #3a4a5a;
+    background-color: #a8dff4;
+    border: 0;
+    background-position: inherit;
+    padding:5px 25px;
+    margin:5px;
+}
+
+a.button:hover{
+
+    background-color: rgba(231, 255, 250, 0.92);
+}
