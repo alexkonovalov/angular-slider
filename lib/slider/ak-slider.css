@@ -1,0 +1,20 @@
+﻿body {
+}
+
+ul.akSlider{
+  /*  height:500px;*/
+  overflow:hidden;
+    position:relative;  
+}
+
+.akSlider li{
+    display:inline-block;
+    left:0;
+   /* height:500px;*/
+    -webkit-transition: 0.5s;
+     /*-moz-transition: 0.5s;
+    -ms-transition: 0.5s;*/
+    transition: 0.5s;
+    ease-out: all;
+    right:0;
+}
